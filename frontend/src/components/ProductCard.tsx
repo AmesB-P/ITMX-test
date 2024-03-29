@@ -1,6 +1,5 @@
 import Image from "next/image";
 import mockPic from "../assets/Image/mockPic.jpg"
-import Link from "next/link";
 import {useAddEditModal} from "@/hooks/useAddEditModal";
 
 type productDataTypes ={
@@ -15,8 +14,8 @@ type propsTypes ={
 }
 
 const ProductCard = ({productData} : propsTypes) => {
-    const {name , description,id} = productData
-    const {open ,setOpen, singleProductData , setSingleProductData , setMode } = useAddEditModal()
+    const {name , description} = productData
+    const {setOpen , setSingleProductData , setMode } = useAddEditModal()
 
     const handleEditProduct =()=>{
         try {

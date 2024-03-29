@@ -1,7 +1,6 @@
 "use client"
 
 import React, {createContext, useState } from "react";
-import {productData} from "@/data/AllProductData";
 
 type productTypes = {
     id : string ,
@@ -10,10 +9,7 @@ type productTypes = {
     description : string
 }
 
-enum Mode {
-    add = "add",
-    edit = "edit"
-}
+
 type ModalContextTypes = {
     open : boolean,
     setOpen: (value: boolean) => void,
