@@ -46,7 +46,6 @@ export default function ModalAddAndEditProduct() {
             }
             if(mode === "add"){
                 setProducts([...products, newData])
-                console.log("newData" , newData)
             }else{
                 setProducts((value : any)=> {
                     const editIndex = value.map((e : any) => e.id).indexOf(data.id)
@@ -71,7 +70,6 @@ export default function ModalAddAndEditProduct() {
             setProducts((value : any)=> {
                 const editIndex = value.map((e : any) => e.id).indexOf(data.id)
                 value.splice(editIndex , 1)
-                console.log("value delete" , value)
                 return [...value]
             })
 
