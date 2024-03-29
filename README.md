@@ -1,4 +1,5 @@
 #ภาษาที่ใช้ 
+ - reactJS (NextJS)
  - Javascript (Typescript)
 
 #Node version
